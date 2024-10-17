@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d dist"
+    "test": "jest"
+   
     "start": "node index.js"
   },
   "keywords": [],
@@ -22,5 +24,11 @@
     "nodemailer": "^6.9.15",
     "nodemon": "^3.1.7",
     "sequelize": "^6.37.4"
+  }
+  "devDependencies": {
+    "@babel/core": "^7.x.x",
+    "@babel/cli": "^7.x.x",
+    "@babel/preset-env": "^7.x.x",
+    "jest": "^26.x.x" // or "mocha": "^8.x.x", "chai": "^4.x.x" if using Mocha/Chai
   }
 }
