@@ -26,10 +26,10 @@
     "express": "^4.17.1"
 
   },
-  "devDependencies": {
-    "@babel/core": "^7.x.x",
-    "@babel/cli": "^7.x.x",
-    "@babel/preset-env": "^7.x.x",
-    "jest": "^26.x.x" // or "mocha": "^8.x.x", "chai": "^4.x.x" if using Mocha/Chai
+ "devDependencies": {
+    "@babel/core": "^7.13.10",
+    "@babel/cli": "^7.13.0",
+    "@babel/preset-env": "^7.13.12",
+    "jest": "^26.6.3"
   }
 }
