@@ -30,7 +30,7 @@ async function dbConnection() {
               )
             `;
     await sqlConnection.query(createContactUsTableQuery);
-    console.log("CONTACT  US table created or already exists");
+    console.log("CONTACT_US table created or already exists");
 
     const createCareersTableQuery = `
               CREATE TABLE IF NOT EXISTS CAREERS (
@@ -41,12 +41,13 @@ async function dbConnection() {
               )
             `;
     await sqlConnection.query(createCareersTableQuery);
+    console.log("CAREERS table created or already exists");
 
     //   const createCareersTableQuery=``
     //   await sqlConnection.query(createCareersTableQuery);
     //   console.log('Carreers table created or already exists')
   } catch (error) {
-    console.error("Error during database initialization: ", err);
+    console.error("Error during database initialization: ", error);
   } finally {
     if (sqlConnection) sqlConnection.release();
   }
